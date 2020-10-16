@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background:#000000;
+    width:100%;
+    height:100vh;
+}
+.container{
+    width:100%;
+    height:100vh;
+}
+h1{
+    text-align: center;
+    font-size:100px;
+    color:#00FF00;
+    width:100%;
+}
+span{
+    color:#fff;
+}
+.input{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width:380px;
+    height:50px;
+    margin-top:30px;
+    border: none;
+    font-size:22px;
+    outline: none;
+    text-indent:15px;
+    border-radius: 50px;
+}
+input::placeholder{
+    text-indent:15px;
+}
+.plus{
+    height:50px;
+    width:50px;
+    margin-top:30px;
+    border:none;
+    border-radius:50px;
+    background-color: #00FF00;
+    color:#fff;
+    outline: none;
+    cursor: pointer;
+    font-size:26px;
+    margin-left:5px;
+    font-weight: bold;
+    user-select: none;
+}
+.plus:focus{
+    outline:none;
+}
+.newItemArea{
+    margin-top:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h2{
+    font-family: 'Piazzolla', serif;
+    letter-spacing:1.5px;
+}
+.newItem{
+    margin-top:40px;
+    height:auto;
+    width:420px;
+    word-wrap:break-word;
+    border-bottom: 2px solid #fff;
+    transition:0.2s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.itemIcons{
+    width:70px;
+    height: auto;
+    float:right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left:50px;
+}
+.itemName{
+    justify-content:center;
+    align-items: center;
+    font-weight: lighter;
+    color:#fff;
+    width:300px;
+    word-wrap: break-word;
+}
+.fa-trash-alt{
+    color:red;
+    font-size:25px;
+    cursor: pointer;
+    margin-left:10px;
+    /* position: absolute;
+    right:0;
+    bottom:15px; */
+}
+
+.fa-check{
+    color:#00FF00;
+    font-size:25px;
+    cursor: pointer;
+    /* position: absolute;
+    right:35px;
+    bottom:15px; */
+}
+.decoration{
+    text-decoration:line-through;
+}
+del{
+    color:#00FF00;
+    font-weight:lighter;
+    font-family: 'Piazzolla', serif;
+}
+@media(max-width:500px){
+    h1{
+        font-size:50px;
+    }
+    input{
+        width:280px;
+    }
+    .newItem{
+        width:330px;
+    }
+    .itemName{
+        width:220px;
+    }
+    input::placeholder{
+        font-size:18px;
+    }
+}
+
+@media(max-width:360px){
+    h1{
+        font-size:35px;
+    }
+    input{
+        width:255px;
+    }
+    input::placeholder{
+        font-size:15px;
+    }
+    .itemName{
+        width:190px;
+    }
+    .newItem{
+        width:300px;
+    }
+}
+
+@media(min-width:1400px){
+    h1{
+        font-size:200px;
+    }
+    input{
+        width:510px;
+        height: 70px;
+        margin-right:10px;
+    }
+    .plus{
+        width:70px;
+        height:70px;
+        font-size: 24px;
+    }
+    input::placeholder{
+        font-size:30px;
+    }
+    .itemName{
+        width:380px;
+    }
+    .itemIcons{
+        margin-left:150px;
+    }
+    .fa-check{
+        font-size:50px;
+        margin-right:20px;
+    }
+    .fa-trash-alt{
+        font-size:50px;
+    }
+    .newItem{
+        width:600px;
+        font-size:30px;
+    }
+}
+  .modal-container{
+    position: absolute;
+    top:0;
+    left:0;
+    display:none;
+    width:100%;
+    height:100vh;
+    background-color:black;
+  }
+  .main-modal{
+    height:150px;
+    width:250px;
+    background-color:#fff;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:10px;
+  }
+  .modal-close{
+    position:absolute;
+    bottom:0px;
+    padding-top: 3px;
+    cursor:pointer;
+    border-top:1px solid rgba(0,0,0,0.2);
+    width:100%;
+    height:37px;
+    text-align:center;
+    color: #00FF00;
+    border-bottom-left-radius:10px; 
+    border-bottom-right-radius:10px;
+    transition: all .3s ease-in-out;
+  }
+  .modal-close:hover{
+    background-color: #00FF00;
+    color:#fff;
+  }
+  .modal-close:focus{
+    background-color: #00FF00;
+    color:#fff;
+  }
+  .modal-info{
+    width:100%;
+    height:130px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+  }
+  
